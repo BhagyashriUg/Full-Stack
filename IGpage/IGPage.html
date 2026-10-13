@@ -1,0 +1,380 @@
+<html>
+    <head>
+        <title>Instagram</title>
+        <style>
+            #main{
+                background-color: whitesmoke;
+                height: 1200px;
+                #topbar{
+                    height: 50px;
+                    background-color: lightgrey;
+                    .dot1{
+                        display: inline-block;   
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 15px;
+                        margin-left: 5px;
+                        background-color: red;
+                    }
+                    .dot1:nth-child(2){
+                        background-color: orange;
+                    }
+                    .dot1:nth-child(3){
+                        background-color: limegreen;
+                    }
+                    
+                    .arrow1{
+                        text-align: center;
+                        border-radius: 5px;
+                        margin-left: 10px;
+                        height: 25px;
+                        width: 30px;
+                        background-color: white;
+                    }
+                    #igurl{
+                        margin-left: 10px;
+                        border-radius: 5px;
+                        width: 800px;
+                        height: 30px;
+                        background-color: white;
+                        text-align: center;
+                        p{
+                            width: 700px;
+                            color: grey;
+                        }
+                        img{
+                            float: right;
+                            margin-right: 5px;
+                            margin-top: -30px;
+                        }
+                    }
+                    #shareimg{
+                        margin-left: 400px;
+                    }
+                }
+                
+                #topbar2{
+                    position: sticky;
+                    top: 0px;
+                    width: 1500px;
+                    height: 70px;
+                    background-color: white;
+                    border-bottom: 1px solid gray;
+                    
+                    h2{
+                        margin-left: 100px;
+                        margin-top: 20px;
+                        margin-right: 800px;
+                    }
+                    img{
+                        margin-right: 25px;
+                    }
+                    #sproimg{
+                        border-radius: 10px;
+                    }
+                    #proimg{
+                        border-radius: 50px;
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+                
+                #Stories{
+                    float: left;
+                    width: 800px;
+                    margin-left: 100px;
+                    h3{
+                        margin-bottom: 0px;
+                    }
+                    
+                    .storyimg{
+                        height: 90px;
+                        width: 90px;
+                        border-radius: 50%;
+                        margin-left: 5px;
+                        padding: 3px;
+                        border: 3px solid mediumvioletred;
+                    }
+                    h1{
+                        margin-left: 20px;
+                        color: gray;
+                    }
+                    td{
+                        text-align: center;
+                        font-weight: bold;
+                        margin-top: 5px;
+                    }
+                    #smallStory{
+                        height: 40px;
+                        width: 40px;
+                        margin-top: 60px;
+                        margin-left: -35px;
+                        border-radius: 40px;
+                    }
+                }
+                #posts{
+                    float: left;
+                    margin-top: 5px;
+                    background-color:white;
+                    width: 800px;
+                    height: 690px;
+                    margin-left: 100px;
+                    #protd1{
+                        margin-top: -15px;
+                    }
+                    #protd2{
+                        font-size: 30px;
+                        font-weight: bold;
+                        margin-left: 500px;
+                    }
+                    #prosection{
+                        height: 80px;
+                    }
+                    #proimg{
+                        margin-left: 10px;
+                        border-radius: 50px;
+                        height: 50px;
+                        width: 50px;
+                    }
+                    #proname{
+                        h3{
+                            margin: 20px;
+                        }
+                        p{
+                            margin: 20px;
+                            margin-top: -20px;
+                        }
+                    }
+                    #postimg{
+                        height: 400px;
+                        width: 800px;
+                    }
+                    #reactions{
+                        border-bottom: 1px solid gray;
+                        .re1{
+                            margin: 5px;
+                            height: 30px;
+                            width: 30px;
+                        }
+                        #re2{
+                            height: 30px;
+                            width: 30px;
+                            margin-left: 620px;
+                        }
+                    }
+                    #commentbox{
+                        height: 25px;
+                        width: 780px;
+                        margin: 10px;
+                        margin-left: 10px;
+                        border: 1px solid gray;
+                        #comment{
+                            float: left;
+                            margin-top: -15px;
+                            margin-left: 5px;
+                        }
+                        #emoji{
+                            float: right;   
+                            height: 25px;
+
+                        }
+                    }
+                }
+                #suggestionBar{
+                    float: right;
+                    height: 300px;
+                    width: 400px;
+                    border: 1px solid lightgray;
+                    background-color: white;
+                    margin-top: -100px;
+                    margin-right: 150px;
+                    .proimg{
+                        border-radius: 50px;
+                        height: 50px;
+                        width: 50px;
+                        margin-left: 10px;
+                    }
+                    #boldName{
+                        margin-top: 0px;
+                        margin-left: 5px;
+                    }
+                    #info{
+                        margin-left: 5px;
+                        margin-top: -15px;
+                        color: gray;
+                    }
+                    button{
+                        background-color: dodgerblue;
+                        border-radius: 5px;
+                        border: 3px solid dodgerblue;
+                        width: 60px;
+                        font-weight: bold;
+                        color: white;
+                    }
+                    #b1{
+                        margin-left: 130px;
+                    }
+                    #b2{
+                        margin-left: 145px;
+                    }
+                    #b3{
+                        margin-left: 210px;
+                    }
+                    h3{
+                        color: dodgerblue;
+                        float: right;   
+                        margin-right: 5px;
+                        margin-top: 0px;
+                    }
+                    #topname{
+                        font-weight: bold;
+                        height: 30px;
+                        color: gray;
+                        margin-left: 20px;
+                    }
+                }
+                #aboutus{
+                    height: 330px;
+                    width: 400px;
+                    float: right;
+                    margin: 20px;
+                    margin-right: 150px;
+                    border-top: 1px solid lightgray;
+                    border-bottom: 1px solid lightgray;
+                    
+                    p{
+                        color: gray;
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="topbar">
+                <table>
+                    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+                    <tr>
+                        <td>
+                            <div class="dot1"></div>
+                            <div class="dot1"></div>
+                            <div class="dot1"></div>
+                        </td>
+                        <td><div class="arrow1"><h2><</h2></div></td>
+                        <td><div class="arrow1"><h2>></h2></div></td>
+                        <td><div class="arrow1"><img src="book.png" height="25px" width="30px"></div></td>
+                        <td><div id="igurl"> 
+                                <p>www.instagram.com</p> 
+                                <img src="refresh.png" height="20px" width="20px">
+                            </div></td>
+                        <td><div id="shareimg"><img src=share.png height="25px" width="30px"></div></td>
+                        <td><div class="arrow1"><img src="files.png" height="25px" width="30px"></div></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="topbar2">
+                <table>
+                    <td><h2>Instagram</h2></td>
+                    <td><div class="arrow2"><img src="home.png" height="25px" width="30px"></div></td>
+                    <td><div class="arrow2"><img src="paperplane.png" height="25px" width="30px"></div></td>
+                    <td><div class="arrow2"><img src="pencomment.png" height="25px" width="30px"></div></td>
+                    <td><div class="arrow2"><img src="like.png" height="25px" width="30px"></div></td>
+                    <td><div><img id="sproimg" src="b4.jpg" height="25px" width="30px"></div></td>
+                    <td><div><img id="proimg" src="B3.jpeg"></div></td>
+                </table>
+            </div>
+            <div id="Stories">
+                <h3>Stories</h3>
+                <table>
+                    <tr>
+                        <td><img class="storyimg" src="addStory.jpg"> 
+                            <img id="smallStory" src="addstroys2.png">Your Story</td>
+                        <td><img class="storyimg" src="m1.jpg"> alex_92</td>
+                        <td><img class="storyimg" src="f1.jpg"> traveler_jane</td>
+                        <td><img class="storyimg" src="m2.jpg"> mike_adams</td>
+                        <td><img class="storyimg" src="f2.jpg"> foodielife</td>
+                        <td><img class="storyimg" src="f3.jpg"> sophie_tere</td>
+                        <td><h1>></h1></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="posts">
+                <div id="prosection">
+                    <table>
+                        <tr>
+                            <td><img id="proimg" src="b4.jpg"></td>
+                            <td><div id="proname"><h3>emily_wanders . </h3>
+                                    <p>Santorini, Greece</p>
+                                </div></td>
+                            <td><p id="protd1">2h</p></td>
+                            <td><p id="protd2">...</p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="photo">
+                    <img id="postimg" src="post.jpg" >
+                </div>
+                <div id="reactions">
+                    <table>
+                        <tr>
+                            <td><img class="re1" src="like.png"></td>
+                            <td><img class="re1" src="comm.png"></td>
+                            <td><img class="re1" src="paperplane.png"></td>
+                            <td><img id="re2" src="save.jpg"></td>
+                        </tr>
+
+                        <tr><td colspan="2"><b>12,838 likes</b></td></tr>
+
+                        </table>
+                        <p style="margin: 5px;"><b>emily_wanders</b> Amazing View!😍🌆</p>
+                        <p style="margin-left: 5px; margin-top: -5px;"><b>alex_92</b> Stunning!😍</p>
+                </div>
+                <div id="commentbox">
+                    <div id="comment"><p style="color: gray">Add a Comment...</p></div>
+                    <div id="emoji">😀</div>
+                </div>
+            </div>
+            <div id="suggestionBar">
+                <table> 
+                    <tr><td id="topname">Suggestions For You</td></tr>
+                </table>
+                    <hr>
+                <table>
+                    <tr><td><img class="proimg" src="f1.jpg"></td>
+                        <td><p id="boldName">Julia.martin</p> <p id="info">Followed by sarah.k</p></td>
+                        <td><button id="b1">Follow</button></td>
+                    </tr>
+                </table>
+                <hr>
+                <table> 
+                    <tr><td><img class="proimg" src="f3.jpg"></td>
+                        <td><p id="boldName">mark_travels</p> <p id="info">New to instagram</p></td>
+                        <td><button id="b2">Follow</button></td>
+                    </tr>
+                </table>
+                <hr>
+                <table> 
+                    <tr><td><img class="proimg" src="f2.jpg"></td>
+                        <td><p id="boldName">livstyle</p> <p id="info">Popular</p></td>
+                        <td><button id="b3">Follow</button></td>
+                    </tr>
+                </table>
+                <hr>
+                <h3>More</h3>
+            </div>
+            <div id="aboutus">
+                <p>About</p>
+                <p>Help</p>
+                <p>Press</p>
+                <p>API</p>
+                <p>Jobs</p>
+                <p>Privacy</p>
+                <p>Terms</p>
+                <p>Locations</p>
+                <p>Language</p>
+                <br>
+                <p>@ 2022 INSTAGRAM</p>
+            </div>
+        </div>
+    </body>
+</html>

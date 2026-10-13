@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <style>
+            #i1{
+                height: 30px;
+                position: sticky;
+                background-color: bisque;
+            }
+            #i1 h2{
+                        position: relative;
+                        animation: A1;
+                        animation-duration:15s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: infinite;
+                }
+            @keyframes A1{
+                0%{
+                   left: 0px;
+                }
+                50%{
+                   left: 920px;      
+                }
+                100%{
+                    left: 0px;
+                }
+            }
+            
+            #i3{
+                position:sticky;
+                background-color: deepskyblue;
+                height: 30px;
+                animation: A3;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;  
+                animation-direction: alternate-reverse;
+            }
+            @keyframes A3{
+                from{
+                    text-transform: uppercase;
+                    color: darkmagenta
+                }
+                to{
+                    color: black;
+                    text-transform: lowercase;
+                    margin-left: 850px;
+                }
+            }
+            
+            #i2{
+                padding: 20px;
+                border: 1px solid black;
+                height: 400px;
+                width: 900px;
+                margin: 20px;
+                margin-left: 50px;
+            
+            }
+            #i2 #i21{
+                text-align: center;
+                background-color: red;
+                position: fixed;
+                border: 1px solid black;
+                height: 50px;
+                width: 50px;
+                animation: A21;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                
+            }
+            @keyframes A21{
+                25%{
+                    transform: rotate(72000deg);
+                    
+                }
+                100%{
+                    transform: rotate(72000deg);         
+                }
+            }
+            #i2  #i22{
+                text-align: center;
+                position: fixed;
+                border: 1px solid black;
+                height: 50px;
+                width: 50px;
+                animation: A22;
+                animation-duration: 5s;
+                animation-delay: 1s;
+                animation-timing-function: ease;  
+                animation-fill-mode: forwards;
+            }
+            @keyframes A22{
+                from{
+                    transform: rotate(72000deg);
+                    background-color: red;
+                }
+                to{
+                    margin-left: 850px;
+                    background-color: rosybrown;
+                } 
+            }
+            #i23{
+                text-align: center;
+                position: fixed;
+                border: 1px solid black;
+                height: 50px;
+                width: 50px;
+                animation: A23;
+                animation-duration: 5s;
+                animation-delay: 6s;
+                animation-timing-function: ease-in;
+                animation-fill-mode: forwards;
+            }
+            @keyframes A23{
+                from{
+                    transform: rotate(72000deg);
+                    margin-left: 850px; 
+                    background-color: rosybrown;
+                }
+                to{
+                    background-color: orchid;
+                    margin-left: 850px;
+                    margin-top: 350px;
+                }
+                
+            }
+            
+            #i24{
+                text-align: center;
+                position: fixed;
+                border: 1px solid black;
+                height: 50px;
+                width: 50px;
+                animation: A24;
+                animation-duration: 5s;
+                animation-delay: 11s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+            }
+            @keyframes A24{
+                from{
+                    background-color: orchid;
+                    transform: rotate(72000deg);
+                    margin-left: 850px; 
+                    margin-top: 350px;
+                }
+                to{
+                    margin-top: 350px;
+                    background-color: lightcoral;
+                }
+                
+            }
+            #i25{
+                text-align: center;
+                position: fixed;
+                border: 1px solid black;
+                height: 50px;
+                width: 50px;
+                animation: A25;
+                animation-duration: 5s;
+                animation-delay: 16s;  
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+            }
+            @keyframes A25{
+                from{
+                    transform: rotate(72000deg);
+                    margin-top: 350px;
+                    background-color: lightcoral;
+                }
+                to{
+                    background-color: red;
+                }
+                
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="i1">
+            <h2>Hello</h2>
+        </div>
+        <div id ="i3">
+            <h3>Bhagyashri</h3>
+        </div>
+        <div id="i2">
+            <div id="i21"></div>
+            <div id="i22"></div>
+            <div id="i23"></div>
+            <div id="i24"></div>
+            <div id="i25"></div>
+        </div>
+        
+    </body>
+</html>

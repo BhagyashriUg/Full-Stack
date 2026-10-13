@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>BHAGYASHRI</title>
+        <style>
+            #i1{
+                border: 1px solid black;
+                height: 100px;
+                width: 100px;
+                position: relative;
+                animation: A1;   
+                animation-duration: 4s;
+            }
+            @keyframes A1{
+                from{
+                    background-color: red;
+                }
+                to{
+                    background-color: aqua;
+                }
+            }
+            
+            #i2{
+                margin-top: 20px;
+                border: 1px solid black;
+                height: 200px;
+                width: 200px;
+                position: relative;
+                animation: A2;
+                animation-duration: 10s;
+            }
+            @keyframes A2{
+                0%{
+                    background-color: aqua;
+                    left: 0px;
+                }
+                25%{
+                    background-color: fuchsia;
+                    left: 200px;
+                }
+                50%{
+                    background-color: dodgerblue;
+                    left: 400px;
+                }
+                100%{
+                    background-color:darksalmon;
+                    left: 600px;
+                }
+            }
+            
+            #i3{
+                margin-top: 20px;
+                border: 1px solid black;
+                height: 200px;
+                width: 200px;
+                position:relative;
+                animation: A3;
+                animation-delay: 4s;
+                animation-duration: 5s;
+            }
+            @keyframes A3{
+                0%{
+                    border-radius: 20px;
+                    left: 0px;
+                    background-color: bisque;
+                }
+                25%{
+                    border-radius: 60px;
+                    left: 200px;
+                    background-color: blueviolet;
+                }
+                50%{
+                    border-radius: 80px;
+                    left: 400px;
+                    background-color: cadetblue;
+                }
+                100%{
+                    border-radius: 180px;
+                    left: 600px;
+                    background-color: firebrick;
+                }
+            }
+            
+            #i4{
+                margin-top: 20px;
+                border: 1px solid black;
+                height: 100px;
+                width: 100px;
+                animation: A4;
+                animation-duration: 9s;
+            }
+            @keyframes A4{
+                50%{
+                    box-shadow:0px 0px 10px rgb(0,0,0);
+                    background-color: chartreuse;
+                    margin-left: 100px;
+                }
+                100%{
+                    box-shadow: 10px 10px 5px rgb(255,125,255);
+                    background-color: chartreuse;
+                    transform:scaleX(2);
+                    margin-left: 400px;
+                }
+            }
+            
+            #i5{
+                margin: 50px;
+                border: 1px solid black;
+                height: 100px;
+                width: 100px;
+                animation: A5;
+                animation-duration: 9s;
+            }
+            @keyframes A5{
+                0%{
+                    background-color: black;
+                    transform: skewX(50deg);
+                }
+                25%{
+                    background-color: coral;
+                    transform: skewY(50deg);
+                }
+                50%{
+                    background-color: forestgreen;
+                    transform: rotateX(50deg);
+                }
+                75%{
+                    background-color: dimgrey;
+                    transform: scaleY(2);
+                }
+                100%{
+                    background-color: deeppink;
+                    transform: rotateZ(60deg);
+                }
+            }
+            #i6{
+                margin: 20px;
+                border: 1px solid black;
+                height: 200px; 
+                width: 200px;
+                position: relative;
+                animation: A6;
+                animation-duration: 5s;
+                background-color: chocolate;
+            }
+            @keyframes A6{
+                0%{
+                    left: 0px;
+                    bottom: 0px;
+                }
+                50%{
+                    right: 0px;
+                    bottom: 0px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="i1"></div>
+        <div id="i2"></div>
+        <div id="i3"></div>
+        <div id="i4"></div>
+        <div id="i5"></div>
+        <div id="i6"></div>
+    </body>
+</html>

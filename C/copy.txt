@@ -1,0 +1,4 @@
+Hello Students
+Number : 123
+This Line is Written using fputs
+A

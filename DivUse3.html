@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <title>DivUse3</title>
+        <style>
+            #main{
+                border: 1px solid black;
+                width: 900px;
+                height: 1110px;
+                margin-left: 250px;
+                border-radius: 20px;
+                
+                #id1{
+                    height: 500px;
+                    width: 900px;
+                    h1{
+                        text-align: center;
+                    }
+                    h3{
+                        text-align: center;
+                    }
+                    #boxdiv{
+                        margin-top: 20px;
+
+                        #subdiv1{
+                            margin-left: 50px;
+                            float: left;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            width: 300px;
+                            height: 210px;
+                        }
+                        #subdiv2{
+                            float: right;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            width: 300px;
+                            height: 210px;
+                            margin-right: 100px;
+                        }
+                    }
+                    #list3{
+                        margin-top: 240px;
+                        width: 500px;
+                        height: 40px;
+                        
+                    }
+                    
+                }
+                #id2{
+                    margin-top: -100px;
+                    height: 670px;
+                    width: 900px;
+                    h2{
+                        text-align: center;
+                    }
+                    #subdiv3{
+                        float: left;  
+                        margin-top: -30px;
+                    }
+                    #subdiv4{
+                        h1{
+                            text-align: center;
+                        }
+                        float: right;
+                        width: 320px;
+                        border: 1px solid black;
+                        border-radius: 20px;
+                        margin-right: 15px;
+                        #hr1{
+                            border: 2px solid black;
+                        }
+                        #table1{
+                            padding-left: 75px;
+                        }
+                        
+                    }
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+    <div id="main">
+        <div id="id1">
+            <h1>DOS (Disk Operating System)</h1>
+            <ol type="1" id="ol1">
+                <li>What is Operating System?</li>
+                    OS means a platform or media, which is communicate between user and machine.
+                <li>How to Operate our system?</li>
+                    There are two ways to operate our system.
+                <div id="boxdiv">
+                <div id="subdiv1">
+                    <h3>GUI</h3>
+                    <ul type="disc">
+                        <li>Easy to work</li>
+                        <li>Low Speed</li>
+                        <li>Weak OS</li>
+                        <li>Low Security</li>
+                        <li>Autorun</li>
+                        <li>No Virus Protection</li>
+                        <li>No Flexibility</li>
+                        <li>e.g. Windows 7, Vista 8, 10, 11</li>
+                    </ul>
+                </div>
+                <div id="subdiv2">
+                    <h3>CLI</h3>
+                    <ul type="disc">
+                        <li>Hard to Work</li>
+                        <li>High Speed</li>
+                        <li>Strong OS</li>
+                        <li>High Security</li>
+                        <li>No Autorun</li>
+                        <li>Virus Protected</li>
+                        <li>Flexible</li>
+                        <li>e.g. DOS, Linux, Unix, Ubuntu,etc.</li>
+                    </ul>
+                </div>
+                    </div>
+                <div id="list3">
+                <li >Types of OS</li>
+                    There are two types of OS(1.Server base OS) (2.Client base OS)
+                    </div>
+            </ol>
+        </div>
+        
+        <div id="id2">
+            <h2>Commands of DOS</h2>
+            <div id="subdiv3">
+                
+                <ol>
+                    <li><b>exit</b> To Exit from DOS.</li>
+                    <li><b>cd..</b> To Back from single directory.</li>
+                    <li><b>cd/</b> To Back from all directory of current drive.</li>
+                    <li><b>d:</b> To change Drive.</li>
+                    <li><b>dir</b> To show the file and Folder List.</li>
+                    <li><b>time</b> To show and modify the Time.</li>
+                    <li><b>date</b> To show and modify the Date.</li>
+                    <li><b>ver</b> To show the version of current OS.</li>
+                    <li><b>cls</b> To clear the screen.</li>
+                    <li><b>color List</b>  To show the color List.</li>
+                    <li><b>copy con (...)</b> To Create File.</li>
+                    <li><b>ctrl + Z</b> To save and exit from current file.</li>
+                    <li><b>ctrl + Z</b> To show the content of particular file.</li>
+                    <li><b>edit (...)</b> To Edit the data of particular file.</li>
+                    <li> <b>ren (old) (new)</b>To rename the file or directory.</li>
+                    <li><b>del (...)</b> To delete the file.</li>
+                    <li><b>md (...)</b> To Create the directory.</li>
+                    <li><b>cd (...)</b> To enter in particular directory.</li>
+                    <li><b>rd (...)</b> To remove the directory.</li>
+                    <li><b>tree</b> To show all directory of current drive or directory.</li>
+                    <li><b>help</b> To show all commands of DOS.</li>
+                    <li><b>shutdown -s</b> To shut down our system (default time 30s).</li>
+                    <li><b>shutdown -a</b> To abort the shutdown process.</li>
+                    <li><b>attrib +s +h (...)</b> To hide particular file or directory.</li>
+                    <li><b>attrib -s -h (...)</b> To unhide file or directory.</li>
+                    <li><b>getmac</b> To show the MAC Address.</li>
+                    <li><b>ipconfig</b> To show the IP Address.</li>
+                    <li><b>systeminfo</b> To show the all information of System.</li>
+                    <li><b>copy (...)</b> Location To copy particular file or directory to particular location.</li>
+                    <li><b>move (...)</b> Location To move particular file or directory to particular location.</li>
+                    <li><b>copy (...), (...)</b> Location To move multiple files or directory to particular location.</li>
+                    <li><b>copy (...), (...)</b> Location To copy multiple file or directory to particular location.</li>
+                    <li><b>copy *.doc (location)</b> To copy all document file to particular location.</li>
+                    <li><b>move *.doc (location)</b> To move all document file to particular location.</li>
+                </ol>
+            </div>
+            
+            <div id="subdiv4">
+                <h1>Extension</h1>
+                <hr id="hr1">
+                <table id="table1">
+                    <tr>
+                        <td>Notepad</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.txt</td>
+                    </tr>
+                    <tr>
+                        <td>Wordpad</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.rtf</td>
+                    </tr>
+                    <tr>
+                        <td>MS-Paint</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.bmp</td>
+                    </tr>
+                    <tr>
+                </table>
+                    <hr id="hr1">
+                    <table id="table1">
+                        <th colspan="11"> MS-Office </th>
+                    </tr>
+                    <tr>
+                        <td>MS-Word</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.docx</td>
+                    </tr>
+                    <tr>
+                        <td>MS-Excel</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.xlsx</td>
+                    </tr>
+                    <tr>
+                        <td>MS-Power Point</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.pptx</td>
+                    </tr>
+                    </table>
+                    <hr id="hr1">
+                    <table id="table1">
+                    
+                    <tr>
+                        <th colspan="11">Other</th>
+                    </tr>
+                    <tr>
+                        <td>Portable Files</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.pdf</td>
+                    </tr>
+                    <tr>
+                        <td>Audio Files</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.mp3</td>
+                    </tr>
+                    <tr>
+                        <td>Video Files</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.mp4</td>
+                    </tr>
+                    <tr>
+                        <td>Temporary File</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.tmp</td>
+                    </tr>
+                    <tr>
+                        <td>Compress file</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.zip</td>
+                    </tr>
+                    <tr>
+                        <td>Executable File</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>.exe</td>
+                    </tr>
+                    </table>
+            </div>
+        </div>
+        
+    </div>
+    </body>
+</html>

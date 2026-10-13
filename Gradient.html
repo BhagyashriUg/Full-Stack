@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>
+            GradientExample
+        </title>
+        <style>
+            #shapes{
+                height: 100px;
+                width:1000px;
+                #R1{
+                    float: left;
+                    height: 200px;
+                    width: 200px;
+                    border: 1px solid black;
+                    background-image: linear-gradient(to left ,pink ,magenta,mediumvioletred);
+                }
+                #R2{
+                    float: right;
+                    margin-right: 500px;
+                    height: 200px;
+                    width: 200px;
+                    border: 1px solid black;
+                    background-image: linear-gradient(to right,purple,lavender);
+                }
+                #R3{
+                    float: right;
+                    margin-top: -200px;
+                    margin-right: 200px;
+                    height: 200px;
+                    width: 200px;
+                    border: 1px solid black;
+                    background-image: linear-gradient(to top,yellow,orange,mediumvioletred)
+                    
+                }
+                #R4{
+                    float: right;
+                    height: 200px;
+                    width: 200px;
+                    margin-right: -500px;
+                    margin-top: -200px;
+                    border: 1px solid black;
+                    background-image: linear-gradient( to bottom,#451E61,#FB8E6A 80%)
+                }
+             }
+            #Shapes2{
+                    height: 100px;
+                    width: 1000px;
+                    margin-top: 200px;
+                    #S1{
+                        height: 350px;
+                        width: 350px;
+                        float: left;
+                        border: 1px solid black;
+                        background-image: radial-gradient(circle,lavender,violet,mediumpurple,purple);
+                        border-radius: 360px;
+                    }
+                #S2{
+                    float: right;
+                    margin-right: 100px;
+                    width: 300px;
+                    height: 300px;
+                    border: 1px solid black;
+                    background-image: conic-gradient(#879AF2 30deg,#8233C5,#E963FD);
+                    border-radius: 360px;
+                }
+                
+                }
+            #Shapes3{
+                    height: 100px;
+                    width: 1000px;
+                    margin-top: 400px;
+            #S3{
+                    width: 300px;
+                    height: 300px;
+                    float: left;
+                    border: 1px solid black; 
+                    background-image: repeating-radial-gradient(darkgreen 10%,green 10%,limegreen 20%,lightgreen 20%);
+                    border-radius: 360px;
+                }
+            #S4{
+                width: 400px;
+                height: 400px;
+                float: right;
+                border: 1px solid balck;
+                border-radius: 360px;
+                background-image: conic-gradient(red 0deg 90deg,black 90deg 180deg, pink 180deg 270deg ,blue 270deg 360deg, red 360deg);
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="shapes">
+            <div id="R1"></div>
+            <div id="R2"></div>
+            <div id="R3"></div>
+            <div id="R4"></div>
+        </div>
+        
+        <div id="Shapes2">
+                <div id="S1"></div>
+                <div id="S2"></div>
+                
+            </div>
+        <div id="Shapes3">
+        <div id="S3"></div>
+        <div id="S4"></div>
+        </div>
+        
+           
+    </body>
+</html>

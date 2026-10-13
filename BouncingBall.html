@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Animation3</title>
+        <style>
+            
+            #main1{
+                height: 650px;
+                width: 400px;
+                border: 1px solid black;
+            }
+            #main1 #i1{
+                float: left;
+                height: 100px;
+                width: 100px;
+                margin: 20px;
+                margin-left: 120px;
+                border: 1px solid black;
+                border-radius: 100px;
+                background-color: dodgerblue;
+                animation: A1;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                animation-direction: alternate;
+                animation-timing-function: ease-in;
+            }
+            @keyframes A1{
+               from{
+                    margin-top: 20px;
+                }
+                to{
+                    margin-top: 500px;
+                }
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="main1">
+        <div id="i1"></div>
+            </div>
+        
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>DropDown</title>
+        <style>
+            #main{
+                height: 50px;
+                background-color: rgb(253,3,99);
+                padding: 5px;
+                ul{
+                    list-style: none;
+                }
+                .mainul>.mainli{
+                    margin-left: 50px;
+                    font-weight: bold;
+                    font-size: 20px;
+                }   
+                
+                .mainli:nth-child(3){
+                    position: absolute;
+                    left: 13%;
+                }
+                
+                .sub1ul{
+                    display: none;
+                    margin-top: 17px;
+                    margin-left: 0px;               
+                }
+                .sub1ul>.sub1li{
+                    width: 203px;
+                }
+                .sub1ul>.sub1li>a:hover{
+                    background-color: rgb(160,2,78);
+                }
+                .mainli:nth-child(2):hover{
+                    .sub1ul{
+                        display: block;
+                        background-color: rgb(204,9,93);
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+                .sub2ul{
+                    background-color: rgb(160,2,78);
+                    display: block;
+                    position: absolute;
+                    left: 100%;
+                    width: 200px;
+                    top:0%;
+                    
+                }
+                .sub2ul>li>a:hover{
+                    background-color: rgb(100,2,78);
+                }
+                .mainul{
+                    display: flex;
+                    margin-left: -50px;
+                }
+                .sub1li>ul{
+                    display: none;
+                       
+                }
+                .sub1li:hover{
+                    
+                    .sub2ul{
+                        display: block;
+                    }
+                }
+                .mainul{
+                    li{
+                        position: relative;
+                    }
+                }
+            }  
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <ul class="mainul">
+                <li class="mainli"><a>Home</a></li>
+                <li class="mainli"><a>Movies</a>
+                    <ul class="sub1ul">
+                        <li class="sub1li"><a>Trending Movies</a>
+                            <ul class="sub2ul">
+                                <li><a>Mayday</a></li>
+                                <li><a>Project Hail Mary</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="sub1li"><a>Popular Movies</a>
+                            <ul class="sub2ul">
+                                <li><a>The Dark Knight</a></li>
+                                <li><a>Inception</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub1li"><a>Thriller Movies</a>
+                            <ul class="sub2ul">
+                                <li><a>Speak No Evil</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub1li"><a>Comedy Movies</a>
+                            <ul class="sub2ul">
+                                <li><a>Bhooth Bangla</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainli"><a>Contact Us</a></li>
+            </ul>
+        </div>     
+    </body>
+</html>
