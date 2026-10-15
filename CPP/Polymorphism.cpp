@@ -1,4 +1,7 @@
 #include<iostream>
+//Overloading Example 
+//Overloading -> same function name in same class
+//Overriding -> same function in different classes one function in one class overrides fuction in another class
 using namespace std;
 class Polymorphism{
 	public:
