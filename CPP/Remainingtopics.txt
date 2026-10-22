@@ -1,0 +1,3 @@
+//searching, friend function ,inline , operator overloading , friend class , this pointer ,
+//ambiguity , pure virtual function, abstract classes , multiple catch,nested exception
+//, custom exception,file handling remaining
