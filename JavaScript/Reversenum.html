@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Enter a Number : ");
+        let b = 0,j=1;
+        console.log("Number Printing in Both Orders : ");
+        for(let i=1;i<=a*2;i++){
+            if(i<=a){
+                console.log(i);
+            }
+            else if(i>a){
+                while(j<a){
+                    j+=1;
+                    b = i-j;
+                    console.log(b);
+                }
+                
+                // OR
+                // b = -(i-a*2)
+                // if(b==0){
+                //     break;
+                // }
+                // else{
+                //     console.log(b);
+                // }
+                
+            }
+        }
+        // console.log("Reverse Printing : ");
+        // for(let i=a;i>0;i--){
+        //     console.log(i);
+        // }
+    </script>
+</body>
+</html>
