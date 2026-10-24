@@ -29,9 +29,10 @@ class Child:public Parent1,public Parent2{
 int main(){
 	
 	Child c1;
-	c1.disp1();
-	c1.disp2();
-	c1.disp3();
-	c1.disp4();
+//	c1.disp1(); //Ambigious
+	c1.Grandparent::disp1();
+//	c1.disp2();
+//	c1.disp3();
+//	c1.disp4();
 	return 0;
 }

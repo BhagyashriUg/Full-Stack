@@ -1,0 +1,2 @@
+Hello, this is file handling in c++. 
+Writing data into file. Appending new line. 
