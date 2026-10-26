@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Dont enter Negative Number");
+        let a = prompt("Enter a Number : ");
+        //confirm returns either true of false if yes then returns true and vice versa
+        let resultOfConfirm = confirm("Are You Sure?");
+        console.log(resultOfConfirm);
+        console.log(a);
+        document.write("Your Answer is : ",a);
+        if(a<0){
+            document.write("<br/>Wrong Number");
+        }
+        else{
+            document.write("<br/>Alright");
+        }
+    </script>
+</body>
+</html>

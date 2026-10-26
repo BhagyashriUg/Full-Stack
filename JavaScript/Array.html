@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50,60,70,80,90,100];
+        console.log(arr);
+        arr.push(85);
+        console.log("After Push Operation : ",arr);
+        arr.unshift(85);
+        console.log("After Unshift Operation : ",arr);
+        arr.shift();
+        console.log("After Shift Operation : ",arr);
+        arr.pop();
+        console.log("After Pop Operation : ",arr);
+        arr.forEach(i => console.log(i));
+
+        let triple = arr.map(n=>n*3);
+        console.log("After performing Triple on all elements : ",triple);
+
+        let even = arr.filter(n => n%2 == 0);
+        console.log("Even Num in arr : ",even);
+
+        let found = arr.find(n => n>80);
+        console.log("Finding  greater than 80 element : ",found);
+
+        let d = arr.includes(100);
+        console.log("Checking if Includes 100 : ",d);
+
+        let find = arr.indexOf(100);
+        console.log("Index of 100 : ",find);
+
+        let till = arr.findIndex(n => n >=80);
+        console.log("Index which contains element greater than or equal to 80 :",till);
+
+        let eat = arr.slice(0,2);
+        console.log("Slicing from index 0-2 (does not include element on index 2)",eat);
+
+        //removes element on index 3 and 1 is number of elements 
+        let spice = arr.splice(3,1);
+        console.log("Splice removes that index and other further : ",spice);
+        console.log(arr);
+
+        let arr2 = ["A","B","C","D","E"];
+        joint = arr2.join("-");
+        console.log("all elements are joint using '-' : ",joint);
+        split = joint.split("-");
+        console.log(split);
+
+        let arr3 = [12,999,42,23,56];
+        let sorting = arr3.sort((a,b)=>a-b);
+        console.log("Sorted data : ",sorting);
+        let sortin = arr3.sort((a,b)=>b-a);
+        console.log("Descending Order sort : ",sortin);
+        
+        let arr4 = [43,23,44,32,12];
+        reversal = arr4.reverse();
+        console.log("Reversing Array : ",reversal);
+
+        summ = arr4.reduce((total,numb) => {return total+numb;},0)
+        console.log("Sum of all elements of arr : ",summ);
+
+    </script>
+</body>
+</html>

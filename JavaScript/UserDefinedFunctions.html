@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Add(a,b){
+            console.log("Addition is : ",parseInt(a)+parseInt(b));
+        }
+        function Sub(a,b){
+            console.log("Substraction is : ",a-b);
+        }
+        function Mul(a,b){
+            console.log("Multiplication is : ",a*b);
+        }
+        function Div(a,b){
+            console.log("Division is : ",a/b);
+        }
+
+        let a = prompt("Enter Number 1 : ");
+        let b = prompt("Enter Number 2 : ");
+        let c = prompt("Enter Your Choice : ");
+        if(c=="/"){
+            if(b==0){
+                console.log("Cannot Divide by zero");
+                while(b==0){
+                    b = prompt("Enter Value for b again : ");
+                }
+            }
+        }
+        switch(c){
+            case "+" : 
+                Add(a,b);
+                break;
+            case "-" : 
+                Sub(a,b);
+                break;
+            case "*" :
+                Mul(a,b);
+                break;
+            case "/":
+                Div(a,b);
+                break;
+            default: 
+                console.log("Wrong Choice of Operator");
+                break;
+        }
+    </script>
+</body>
+</html>
