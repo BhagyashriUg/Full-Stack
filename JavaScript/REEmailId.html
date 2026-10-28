@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emailAdd = prompt("Enter Your Email Address : ");
+        let regex = /^[a-z]\d[0-9]\d(?= .+(@gmial.com))/
+        let check = regex.test(emailAdd);
+        if(check){
+            console.log("Email is Correct");
+        }
+        else{
+            console.log("Email is Incorrect");
+        }
+    </script>
+</body>
+</html>

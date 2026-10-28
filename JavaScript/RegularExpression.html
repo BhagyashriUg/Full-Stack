@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //regex eg . checking format of the input from user
+        let num = prompt("Enter Your Telephone Number : ");
+        let regex = /^[6-9]\d{9}$/ // $ -> denotes ending 
+        let condition = regex.test(num);
+        console.log
+        if(condition){
+            console.log("Number is In Right Format");
+        }
+        else{
+            console.log("Number is Not in required format");
+        }
+    </script>
+</body>
+</html>
