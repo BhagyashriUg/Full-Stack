@@ -8,7 +8,7 @@
 <body>
     <script>
         let emailAdd = prompt("Enter Your Email Address : ");
-        let regex = /^[a-z]\d[0-9]\d(?= .+(@gmial.com))/
+        let regex = /^[a-z0-9.]+@gmail\.com/;
         let check = regex.test(emailAdd);
         if(check){
             console.log("Email is Correct");

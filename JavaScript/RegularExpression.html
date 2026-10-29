@@ -8,16 +8,50 @@
 <body>
     <script>
         //regex eg . checking format of the input from user
-        let num = prompt("Enter Your Telephone Number : ");
-        let regex = /^[6-9]\d{9}$/ // $ -> denotes ending 
-        let condition = regex.test(num);
-        console.log
-        if(condition){
-            console.log("Number is In Right Format");
+        //[] -> for single data
+        //{} -> represents multiplier
+        // let num = prompt("Enter Your Telephone Number : ");
+        // let regex = /^[6-9]\d{9}$/ // $ -> denotes ending 
+        // //\d avoides 9 to be multiplier and asking each digit in range 6-9
+        // let condition = regex.test(num);
+        // console.log
+        // if(condition){
+        //     console.log("Number is In Right Format");
+        // }
+        // else{
+        //     console.log("Number is Not in required format");
+        // }
+
+        // let name = prompt("Enter Your Name : ");
+        // let regex1 = /^[A-Z][a-z]+$/
+        // let condition1 = regex1.test(name);
+        // if(condition1){
+        //     console.log("Name is In Right format");
+        // }
+        // else{
+        //     console.log("First letter of Name Should be Capital");
+        // }
+
+        // let FullName = prompt("Enter Your Full Name : ");
+        // let regex2 = /^[A-Z][a-z]+\s[A-Z][a-z]+\s[A-Z][a-z]+$/
+        // let condition2 = regex2.test(FullName);
+        // if(condition2){
+        //     console.log("Correct Format");
+        // }
+        // else{
+        //     console.log("Incorrect format");
+        // }
+
+        let password = prompt("Enter Password : ");
+        let regex3 = /^[A-Za-z0-9]+[@!#$%7*^]+{8}$/;
+        let condition3 = regex3.test(password);
+        if(condition3){
+            console.log("Fine");
         }
         else{
-            console.log("Number is Not in required format");
+            console.log("Password Must be of length 8");
         }
+        //Your Password Must contain -> length 8 Any 1 -> Capital Alphabet, Small Alphabet, special character and Digit
     </script>
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Box{
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+        }
+        #Box2{
+            background-color: bisque;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Box">
+        <button onclick="changeColor()">
+            Click Here
+        </button>
+    </div>
+    <div id="Box2">
+        <p>What is html?</p>
+        <button onclick="ShowAns()">Show Answer</button>
+    </div>
+    <script>
+        function changeColor(){
+            let a = document.getElementById("Box").style.backgroundColor="skyblue";
+            let b = document.getElementById("Box").innerHTML="Ok Thank You"
+        }
+        function ShowAns(){
+            let a = document.getElementById("Box2").innerText="Hyper Text Markup Language."
+        }
+    </script>
+</body>
+</html>
